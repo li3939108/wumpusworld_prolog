@@ -21,7 +21,6 @@ init_agent:-
 	retractall(cl(_,_)), 
 	retractall(pl(_,_)), 
 	retractall(face(_)),
-        retractall(score(_)),
 	retractall(wumdie(_)),
 	retractall(turnback(_)),
 	retractall(nopit(_,_)),
@@ -36,7 +35,6 @@ init_agent:-
 	assert(cl(1,1)),  %record the current position of the agent
 	assert(pl(1,1)),  %record the previous position of the agent
 	assert(face(0)),
-        assert(score(0)),
 	assert(wumdie(0)),
 	assert(turnback(0)),
 	assert(nopit(1,1)),
